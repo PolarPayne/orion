@@ -17,7 +17,9 @@ if (!process.env.LOCAL) {
 app.use(express.static("./site/"));
 
 const apiRoute = "/api";
-app.use(apiRoute, require("./src/api")(apiRoute));
+app.use(apiRoute, require("./src/api")(apiRoute, {
+    title: "Varjo Kino"
+}));
 
 app.get("*", (req, res) => {
     res.redirect("/");
