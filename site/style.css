@@ -1,0 +1,58 @@
+body {
+    background-color: #ececec;
+}
+
+#content {
+    border-style: solid;
+    padding: 0;
+    max-width: 40em;
+    margin: 1em auto;
+    background-color: #ffffff;
+    color: #a30f5b;
+    font-family: sans-serif;
+}
+
+.item {
+    border-style: solid;
+    margin: 1em;
+    padding: 1em;
+}
+
+.date {
+    text-align: center;
+    margin: 0;
+}
+
+p, h1, h2 {
+    color: #000000;
+}
+
+p {
+    font-size: 0.85em;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.2em;
+    color: #a30f5b;
+    margin: 0;
+}
+
+a {
+    color: #a30f5b;
+}
+
+a:hover {
+    border-bottom: 0.15em solid #a30f5b;
+}
+
+a:visited, a:link {
+    text-decoration: none;
+}

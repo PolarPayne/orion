@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Varjo-Orion</title>
+
+        <meta charset="utf-8">
+        <meta name="author" content="Maximilian Remming">
+        <meta name="description" content="Yksinkertainen, nopea, ja minimalistinen sivusto Orionin näytöksiin, ja näytösaikoihin.">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" href="icon.png">
+
+        <link rel="stylesheet" href="style.css">
+
+        <!-- The good old evil Google Analytics -->
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-84150313-1', 'auto');
+            ga('require', 'linkid');
+            ga('send', 'pageview');
+        </script>
+    </head>
+    <body>
+        <div id="content">
+            <h1><a href="https://kavi.fi/fi/">Varjo-Orion</a></h1>
+            <hr>
+
+            <div id="data">
+                <p style="text-align: center;">Ladataan...</p>
+            </div>
+
+            <hr>
+            <p style="text-align: center;">Made by:
+                <a href="http://remming.fi">Maximilian Remming</a>
+            </p>
+        </div>
+
+        <!-- JS -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script>$("#data").load("/api/html");</script>
+    </body>
+</html>
