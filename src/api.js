@@ -2,7 +2,8 @@ const
     cache = require("./cache"),
     router = require("express").Router(),
     routes = [
-        require("./api/orion")
+        require("./api/orion"),
+        require("./api/kavi")
     ]
 
 function setup(apiRoute, meta) {
@@ -16,7 +17,7 @@ function setup(apiRoute, meta) {
 
             data.push(fullRoute);
             router.get(route, (req, res) => {
-                cache(route, api[route].getter).then((data) => {
+                api[route].getter().then((data) => {
                     res.json({
                         route: fullRoute,
                         meta: api[route].meta,
